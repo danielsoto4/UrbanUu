@@ -1,0 +1,207 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 15px solid black;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  color: #ffffff;
+  background-color: black;
+  padding: 15px 60px;
+  z-index: 10;
+  border-bottom-right-radius: 20px;
+  display: flex;
+}
+
+.title div {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+.navbar {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px 15px;
+  z-index: 10;
+  border-bottom-left-radius: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #5a5a5a;
+  font-size: 20px;
+}
+
+.title2 {
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 10;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: left;
+  line-height: 1.0;
+}
+
+.title2 div {
+  font-size: 5rem;
+  margin-bottom: -5px;
+}
+
+.title2 .upper {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.title2 div:nth-child(1) {
+  font-size: 4rem;
+}
+
+.title2 div:nth-child(2) {
+  font-size: 5rem;
+}
+
+.title2 div:nth-child(3) {
+  font-size: 6rem;
+}
+
+.buttons {
+  position: absolute;
+  top: 62%;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-tour {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.arrow-btn {
+  font-size: 2rem;
+  background-color: #2196F3;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #ffffff;
+  background-color: black;
+  padding: 5px 25px;
+  z-index: 10;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-left: 50px solid black;
+  border-top: 10px solid black;
+}
+
+.description div {
+  margin-bottom: 5px;
+}
+
+.tour-container {
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+}
+
+.tour-logo-wrapper {
+  width: 150px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.tour-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour-text {
+  color: #777777;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
